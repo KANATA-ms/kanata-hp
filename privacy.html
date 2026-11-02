@@ -181,5 +181,9 @@ main{background:var(--cream);padding:120px 0 80px;min-height:70vh}
     <div class="btm"><span>© 2026 株式会社KANATA. All rights reserved.</span><span><a href="privacy.html">プライバシーポリシー</a>　<a href="tokusho.html">特定商取引法に基づく表記</a></span><span>代表取締役：品川 義久</span></div>
   </div>
 </footer>
+<script>
+// スマホのメニュー: 項目を選んで移動したら、開いたメニューを閉じる（yuppi 11/2）
+document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('menu').classList.remove('open');});});
+</script>
 </body>
 </html>

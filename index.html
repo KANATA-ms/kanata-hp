@@ -495,5 +495,9 @@ footer .btm{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;m
   });
 })();
 </script>
+<script>
+// スマホのメニュー: 項目を選んで移動したら、開いたメニューを閉じる（yuppi 11/2）
+document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('menu').classList.remove('open');});});
+</script>
 </body>
 </html>
