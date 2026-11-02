@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>特定商取引法に基づく表記｜株式会社KANATA</title>
+<meta name="description" content="株式会社KANATAの特定商取引法に基づく表記。">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Mochiy+Pop+One&display=swap">
+<style>
+/* 下層ページ。トークン・ヘッダー・フッターの CSS は index.html から複製（index.html が正本。変えたら両方直す） */
+:root{
+  --ink:#2B1B10; --sub:#6b5a4c;
+  --orange:#FF7A1A; --orange-d:#E85A05; --cream:#FFF3DC; --cream-d:#FBE6C2;
+  --yellow:#FFD600; --yellow-l:#FFF3B0;
+  --pink:#FF4D7D; --pink-l:#FFE3EC;
+  --green:#2BC48A; --green-l:#DCF6EA;
+  --blue:#1F62B5; --blue-l:#DDEBFF;
+  --f:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Noto Sans JP",sans-serif;
+  --fp:"Mochiy Pop One","Zen Maru Gothic","Hiragino Maru Gothic ProN",sans-serif;
+  --hs:4px 4px 0 var(--ink);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:#fff;color:var(--ink);font-family:var(--f);font-weight:500;font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+p{margin:0 0 1em}
+h1,h2,h3{margin:0;line-height:1.35;font-weight:900}
+ul{margin:0;padding:0;list-style:none}
+.in{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.sec{padding-block:clamp(56px,8vw,112px);position:relative}
+.note{display:inline-block;font-size:.72rem;font-weight:700;background:#fff;color:#8a6d00;border:1px solid #e3cf6a;border-radius:4px;padding:0 6px;line-height:1.6;vertical-align:middle;font-family:var(--f)}
+.ph{position:relative;background:#fff;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph i{position:absolute;left:8px;top:8px;font-style:normal;font-size:.7rem;background:rgba(255,255,255,.88);color:#555;padding:1px 7px;border-radius:3px;font-family:var(--f);z-index:2}
+
+.btn{display:inline-block;font-family:var(--fp);font-size:1rem;text-decoration:none;padding:10px 28px;border-radius:999px;border:3px solid var(--ink);box-shadow:var(--hs);background:var(--yellow);color:var(--ink);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn.ghost{background:#fff}
+.btn.or{background:var(--orange);color:#fff}
+/* ヘッダー: 固定。白地に 4 色の帯。左ロゴ、ナビ 6、右にボタン */
+header{position:fixed;inset:0 0 auto 0;z-index:50;background:#fff;box-shadow:0 2px 0 var(--ink)}
+header .in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;font-size:1.15rem;letter-spacing:.04em;line-height:1.1}
+.logo img{height:44px;width:auto;flex:none}
+.logo small{display:block;font-weight:500;font-size:.62rem;letter-spacing:.14em;color:var(--sub);margin-top:3px}
+nav ul{display:flex;gap:4px;align-items:center}
+nav a{text-decoration:none;font-weight:900;font-size:.92rem;padding:6px 12px;border-radius:999px}
+nav a:hover{background:var(--yellow)}
+nav .btn{margin-left:8px;padding:6px 20px;font-size:.92rem;box-shadow:3px 3px 0 var(--ink)}
+.bar{height:8px;background:linear-gradient(90deg,var(--orange) 0 25%,var(--yellow) 0 50%,var(--pink) 0 75%,var(--green) 0)}
+.burger{display:none;width:44px;height:44px;border:3px solid var(--ink);border-radius:12px;background:var(--yellow);box-shadow:3px 3px 0 var(--ink);cursor:pointer;place-items:center;padding:0}
+.burger span{display:block;width:20px;height:3px;background:var(--ink);border-radius:2px;box-shadow:0 -7px 0 var(--ink),0 7px 0 var(--ink)}
+@media (max-width:980px){
+  nav ul{display:none;position:absolute;left:0;right:0;top:80px;background:#fff;flex-direction:column;align-items:stretch;padding:12px 20px 20px;gap:6px;border-bottom:3px solid var(--ink)}
+  nav ul.open{display:flex}
+  nav a{display:block;text-align:center;font-size:1rem}
+  nav .btn{margin:8px 0 0}
+  .burger{display:grid}
+}
+
+/* フッター: 濃いクリーム。4 列。下段にコピーライトと代表者名 */
+footer{background:var(--cream-d);padding:56px 0 24px;border-top:3px solid var(--ink)}
+footer .g{display:grid;grid-template-columns:2fr 1fr 1fr;gap:clamp(24px,4vw,56px)}
+footer .flogo img{height:auto;width:170px;border:3px solid var(--ink);border-radius:18px;box-shadow:var(--hs);background:#fff}
+footer p{font-size:.9rem;margin:14px 0 0;max-width:28em}
+footer h4{margin:0 0 10px;font-family:var(--fp);font-weight:400;font-size:1rem}
+footer li{font-size:.9rem;margin:4px 0}
+footer li a{text-decoration:none}
+footer li a:hover{text-decoration:underline}
+footer .btm{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:40px;padding-top:16px;border-top:2px dashed var(--ink);font-size:.8rem}
+@media (max-width:700px){footer .g{grid-template-columns:1fr}}
+
+/* 下層ページ（規約類）: クリーム地に白いカード 1 枚。見出しはポップ体、本文は読みやすさ優先 */
+main{background:var(--cream);padding:120px 0 80px;min-height:70vh}
+.doc{background:#fff;border:3px solid var(--ink);border-radius:22px;box-shadow:8px 8px 0 var(--ink);padding:clamp(24px,4vw,56px);max-width:860px;margin:0 auto}
+.doc .lbl{display:inline-block;font-family:var(--fp);font-size:.78rem;letter-spacing:.18em;color:#fff;background:var(--orange);padding:2px 14px;border-radius:999px;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);margin-bottom:14px}
+.doc h1{font-family:var(--fp);font-weight:400;font-size:clamp(1.5rem,3.4vw,2.1rem);letter-spacing:.04em;line-height:1.4;margin-bottom:8px}
+.doc h1 span{background:linear-gradient(transparent 60%,var(--yellow) 60%);padding:0 4px}
+.doc .date{font-size:.85rem;color:var(--sub);font-weight:700;margin:0 0 28px}
+.doc h2{font-size:1.1rem;font-weight:900;margin:36px 0 10px;padding-left:14px;border-left:6px solid var(--orange);line-height:1.5}
+.doc p,.doc li{font-size:.97rem}
+.doc ul{list-style:disc;padding-left:1.4em;margin:0 0 1em}
+.doc li{margin:4px 0}
+.doc dl{margin:0;border:3px solid var(--ink);border-radius:16px;overflow:hidden;box-shadow:var(--hs);background:#fff}
+.doc .row{display:grid;grid-template-columns:1fr 2.2fr;border-bottom:3px solid var(--ink)}
+.doc .row:last-child{border-bottom:0}
+.doc dt{background:var(--yellow-l);font-weight:900;padding:12px 18px;border-right:3px solid var(--ink);font-size:.95rem}
+.doc dd{margin:0;padding:12px 18px;font-size:.95rem}
+.doc .contact{margin-top:20px;background:var(--cream);border:3px solid var(--ink);border-radius:16px;box-shadow:var(--hs);padding:16px 20px}
+.doc .contact b{display:block;font-size:1.05rem}
+.doc .contact a{text-decoration:none}
+.doc .back{margin-top:40px;text-align:center}
+@media (max-width:520px){.doc .row{grid-template-columns:1fr}.doc dt{border-right:0;border-bottom:2px dashed var(--ink);padding:6px 16px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="in">
+    <a class="logo" href="index.html"><img src="img/logo_mark.png" alt=""><span>株式会社KANATA<small>KANATA CO., LTD.</small></span></a>
+    <nav>
+      <button class="burger" type="button" aria-label="メニュー" onclick="document.getElementById('menu').classList.toggle('open')"><span></span></button>
+      <ul id="menu">
+        <li><a href="index.html#about">会社について</a></li>
+        <li><a href="index.html#services">事業内容</a></li>
+        <li><a href="index.html#strengths">強み</a></li>
+        <li><a href="index.html#system">新システム</a></li>
+        <li><a href="index.html#company">会社概要</a></li>
+        <li><a href="index.html#contact">お問い合わせ</a></li>
+        <li><a class="btn or" href="index.html#contact">お見積り依頼</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="bar"></div>
+</header>
+<main>
+  <div class="in">
+    <article class="doc">
+      <span class="lbl">LEGAL</span>
+      <h1><span>特定商取引法に基づく表記</span></h1>
+      <p class="date">最終更新：2026年11月2日</p>
+      <dl>
+        <div class="row"><dt>販売業者</dt><dd>株式会社KANATA</dd></div>
+        <div class="row"><dt>運営統括責任者</dt><dd>代表取締役 品川 義久</dd></div>
+        <div class="row"><dt>所在地</dt><dd>〒730-0803 広島県広島市中区広瀬北町3-36</dd></div>
+        <div class="row"><dt>電話番号</dt><dd><a href="tel:0822082720">082-208-2720</a>（受付時間は平日 9:00〜17:00）</dd></div>
+        <div class="row"><dt>FAX</dt><dd>082-208-2688</dd></div>
+        <div class="row"><dt>メールアドレス</dt><dd><a href="mailto:info@kanata-ms.co.jp">info@kanata-ms.co.jp</a></dd></div>
+        <div class="row"><dt>販売価格</dt><dd>商品・サービスごとに、お見積りの際にご提示します。表示価格はすべて税込です。</dd></div>
+        <div class="row"><dt>商品代金以外にかかる費用</dt><dd>配達料（配達先の地域と数量により異なります。お見積りの際にご案内します）、銀行振込の場合の振込手数料</dd></div>
+        <div class="row"><dt>お支払い方法</dt><dd>銀行振込、現金。法人・施設のお客様は、締め日と支払期日を個別に取り決めます。</dd></div>
+        <div class="row"><dt>お支払い時期</dt><dd>ご注文時に取り決めた期日までにお支払いください。</dd></div>
+        <div class="row"><dt>商品のお届け時期</dt><dd>ご注文時に取り決めた日時にお届けします。</dd></div>
+        <div class="row"><dt>返品・キャンセル</dt><dd>食品のため、お届け後の返品はお受けできません。ご注文のキャンセルは、お届け日の 2 日前までにお電話でご連絡ください。それ以降のキャンセルは、商品代金の全額をいただく場合があります。</dd></div>
+        <div class="row"><dt>商品に不備があった場合</dt><dd>お届けした商品に不備があったときは、お届け当日中にご連絡ください。交換または返金で対応します。</dd></div>
+      </dl>
+      <p class="back"><a class="btn ghost" href="index.html">トップページへ戻る</a></p>
+    </article>
+  </div>
+</main>
+<footer>
+  <div class="in">
+    <div class="g">
+      <div>
+        <a class="logo flogo" href="index.html"><img src="img/logo.jpg" alt="株式会社KANATA"></a>
+        <p>広島に根ざした給食受託会社として、地元の食材で真心のこもった食事を毎日お届けしています。</p>
+      </div>
+      <div>
+        <h4>事業内容</h4>
+        <ul><li><a href="index.html#services">病院・福祉施設給食</a></li><li><a href="index.html#services">社員食堂・寮運営</a></li><li><a href="index.html#services">仕出し弁当</a></li><li><a href="index.html#services">ショップ運営</a></li></ul>
+      </div>
+      <div>
+        <h4>お問い合わせ</h4>
+        <ul><li>広島市中区広瀬北町3-36</li><li><a href="tel:0822082720">TEL: 082-208-2720</a></li><li>FAX: 082-208-2688</li><li><a href="index.html#contact">お問い合わせフォーム</a></li></ul>
+      </div>
+    </div>
+    <div class="btm"><span>© 2026 株式会社KANATA. All rights reserved.</span><span><a href="privacy.html">プライバシーポリシー</a>　<a href="tokusho.html">特定商取引法に基づく表記</a></span><span>代表取締役：品川 義久</span></div>
+  </div>
+</footer>
+</body>
+</html>
